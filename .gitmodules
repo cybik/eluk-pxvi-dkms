@@ -1,0 +1,4 @@
+[submodule "tk-quanta-elukxvi"]
+	path = tk-quanta-elukxvi
+	url = git@github.com:cybik/tk-quanta-elukxvi.git
+	branch = master
