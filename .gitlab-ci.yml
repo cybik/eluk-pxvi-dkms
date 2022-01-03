@@ -3,6 +3,7 @@ image: debian:latest
 variables:
   DEBIAN_FRONTEND: noninteractive
   PACKAGES_FOLDER_NAME: $CI_PROJECT_DIR/packages
+  GIT_SUBMODULE_STRATEGY: recursive
 
 before_script:
   - apt-get update -qq
