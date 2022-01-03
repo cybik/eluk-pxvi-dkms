@@ -1,5 +1,11 @@
 # tk-quanta-elukxvi
 
+# CI Status
+
+[![pipeline status](https://gitlab.com/cybik/eluk-pxvi-dkms/badges/trunk/pipeline.svg)](https://gitlab.com/cybik/eluk-pxvi-dkms/-/commits/trunk)
+
+# Nani
+
 ## What is this?
 
 A clean module-based repo that pulls in my fork of Tuxedo Keyboards' repo with my own modifications for the Eluktronics Prometheus XVI.
