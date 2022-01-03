@@ -1,0 +1,1 @@
+../tk-quanta-elukxvi/src_pkg/rpm_pkg_eluk.spec

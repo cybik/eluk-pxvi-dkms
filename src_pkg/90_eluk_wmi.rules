@@ -1,0 +1,20 @@
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod -R o+rw /sys/bus/wmi/drivers/%k/module/parameters/"
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod o-w /sys/bus/wmi/drivers/%k/module/parameters"
+
+# Commit ops specifically, as udev dislikes wildcards in run.
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod 444 /sys/bus/wmi/drivers/%k/module/parameters/rgb_commit_all"
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod 444 /sys/bus/wmi/drivers/%k/module/parameters/rgb_commit_kbd"
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod 444 /sys/bus/wmi/drivers/%k/module/parameters/rgb_commit_logo"
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod 444 /sys/bus/wmi/drivers/%k/module/parameters/rgb_commit_trunk"
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod 444 /sys/bus/wmi/drivers/%k/module/parameters/rgb_pretend_commit_all"
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod 444 /sys/bus/wmi/drivers/%k/module/parameters/rgb_pretend_commit_kbd"
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod 444 /sys/bus/wmi/drivers/%k/module/parameters/rgb_pretend_commit_logo"
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod 444 /sys/bus/wmi/drivers/%k/module/parameters/rgb_pretend_commit_trunk"
+
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod o-w /sys/bus/wmi/drivers/%k/module/parameters/rgb_preset_ambient_100"
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod o-w /sys/bus/wmi/drivers/%k/module/parameters/rgb_preset_ambient_50"
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod o-w /sys/bus/wmi/drivers/%k/module/parameters/rgb_preset_breathing_100"
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod o-w /sys/bus/wmi/drivers/%k/module/parameters/rgb_preset_breathing_50"
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod o-w /sys/bus/wmi/drivers/%k/module/parameters/rgb_preset_offline"
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod o-w /sys/bus/wmi/drivers/%k/module/parameters/rgb_preset_solid_100"
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod o-w /sys/bus/wmi/drivers/%k/module/parameters/rgb_preset_solid_50"
