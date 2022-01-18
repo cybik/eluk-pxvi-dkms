@@ -1,4 +1,6 @@
 .*.cmd
 *.symvers
 *.order
-
+*.log
+*.pid
+go.sum
