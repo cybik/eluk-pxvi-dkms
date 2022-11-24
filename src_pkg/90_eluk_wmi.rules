@@ -18,3 +18,5 @@ SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="ad
 SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod o-w /sys/bus/wmi/drivers/%k/module/parameters/rgb_preset_offline"
 SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod o-w /sys/bus/wmi/drivers/%k/module/parameters/rgb_preset_solid_100"
 SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod o-w /sys/bus/wmi/drivers/%k/module/parameters/rgb_preset_solid_50"
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod o-w /sys/bus/wmi/drivers/%k/module/parameters/rgb_last_update"
+SUBSYSTEM=="drivers", DEVPATH=="/bus/wmi/drivers/eluk-pxvi-led-wmi", ACTION=="add", RUN+="/usr/bin/chmod o-w /sys/bus/wmi/drivers/%k/module/parameters/rgb_last_known_state"
